@@ -53,9 +53,24 @@ public class App {
                 System.out.println("you could cycle along PCN");
                 break;
             default:
-            System.out.println("whats your hobby" + name +"?");
-            break;
+                System.out.println("whats your hobby" + name + "?");
+                break;
 
+        }
+
+        Integer myAge = 0;
+        String inputAge = cons.readLine("whats your age?");
+        myAge = Integer.parseInt(inputAge);
+        if (myAge >= 0 && myAge <= 2) {
+            System.out.println(" you are a baby");
+        } else if ((myAge > 0) && (myAge < 7)) {
+            System.out.println("you are a toddler");
+        } else if ((myAge >= 7) && (myAge < 12)) {
+            System.out.println("you are a child");
+        } else if ((myAge >= 12) && (myAge < 18)) {
+            System.out.println("you are a teen");
+        } else {
+            System.out.println("you are an adult");
         }
 
     }
