@@ -71,8 +71,36 @@ public class App {
             System.out.println("you are a teen");
         } else {
             System.out.println("you are an adult");
+
         }
 
-    }
+        Integer i =0;
+        input = cons.readLine("type a phrase");
+        while(i<=input.length()){
+            //substring (begin index -->end index)
+        System.out.println(input.substring(0,i));
+            i++;
+        }
 
+        for (int idx=0;idx< input.length() +1;idx++){
+           System.out.println(input.substring(0,idx)); 
+        }
+
+    String todo[] = new String[5];
+    for (int pos=0; pos< todo.length; pos++){
+    input= cons.readLine("Enter todo task %d: ",(pos+1));
+        todo[pos]=input;
+        
+}
+
+for (int pos =0;pos<todo.length;pos++){
+    System.out.println("task"+ (pos+1)+todo[pos]);
+}
+//slide 24
+String strName = "NUS";
+if (args.length>0){
+    strName= args[0];
+}
+System.out.println("hello "+strName);
+}
 }
